@@ -10,16 +10,16 @@ html {
 }
 
 .title {
-    color: black;
+    color: $title-color;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: $title-fontsize;
     &_center {
         text-align: center;
     }
 }
 
 .text {
-    color: $title-color;
+    color: $text-color;
 }
 
 .header {
