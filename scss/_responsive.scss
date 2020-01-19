@@ -1,0 +1,24 @@
+@media (max-width: 640px) {
+    .profile {
+        width: 100%;
+    }
+
+    .section {
+        padding: 5px 10px;
+    }
+
+    .main_section {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .main-article {
+        &__title{
+            font-size: 30px;
+        }
+
+        &__list{
+            font-size: 10px;
+        }
+    }
+}
