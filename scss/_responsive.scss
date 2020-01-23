@@ -3,38 +3,38 @@
         min-width: 100%;
         max-width: 100%;
     }
-
-    .section {
-        padding: 20px;
-    }
-
-    .section, .article-aboutme {
-        flex-flow: column;
-    }
-
-    .article-skills {
-        flex-wrap: wrap;
-    }
-
     .header-article__title {
         font-size: 30px;
         margin-bottom: 20px;
-    }
-    .section__img {
-        width: 100%;
-    }   
-
-    .article-itsme {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-        margin-left: 0;
-    }
-    .article-aboutme__column {
-        width: 100%;
+    }    
+    .section {
+        padding: 20px;
+        flex-flow: column;
+        &__img {
+            width: 100%;
+        }
     }
 
-    .article-skills__column {
-        padding: 20px 0;
+    .article{
+        &-aboutme {
+            flex-flow: column;
+        }
+
+        &-skills {
+            flex-wrap: wrap;
+        }
+        &-itsme {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        &-aboutme__column {
+            width: 100%;
+        }
+
+        &-skills__column {
+            padding: 20px 0;
+        }
     }
 }
