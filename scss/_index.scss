@@ -66,6 +66,8 @@ html {
 
     &__img {
         width: 40%;
+        height: 40%;
+        align-self: center;
     }
 
     &_color {
@@ -76,24 +78,28 @@ html {
         @include display(block);
     }
 
-    &-itsme__img {
-        height: 300px;
+    &-itsme {
+        @include display(block);
+        &__img {
+            float: left;
+            width: 40%;
+            height: 40%;
+            margin: 0 25px 5px 0;
+        }
     }
-    
 }
 
 .article {
     &-aboutme, &-skills {
         @include display(flex);
     }
-    
+
+    &-skills {
+        flex-wrap: wrap;
+    }
+
     &_color {
         color: $article-color;
-    }
-    
-    &-itsme {
-        width: 65%;
-        margin-left: 30px;
     }
     
     &-itsme__text {

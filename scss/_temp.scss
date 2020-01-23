@@ -3,6 +3,9 @@
         min-width: 100%;
         max-width: 100%;
     }
+    .section {
+        padding: 20px;
+    }
 }
 @media screen and (max-width: 780px) {
     .header-article__item{
@@ -29,7 +32,7 @@
         }
         &-aboutme__column {
             width: 100%;
-        } 
+        }
         &-aboutme {
             flex-flow: column;
         }
@@ -44,9 +47,6 @@
     .header-article__title {
         font-size: 30px;
         margin-bottom: 20px;
-    }
-    .section {
-        padding: 20px;
     }
     .article{
         &-itsme {

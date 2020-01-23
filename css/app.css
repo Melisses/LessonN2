@@ -107,6 +107,8 @@ html {
 }
 .section__img {
   width: 40%;
+  height: 40%;
+  align-self: center;
 }
 .section_color {
   background-color: #EBEBE9;
@@ -114,8 +116,14 @@ html {
 .section-aboutme, .section-skills {
   display: block;
 }
+.section-itsme {
+  display: block;
+}
 .section-itsme__img {
-  height: 300px;
+  float: left;
+  width: 40%;
+  height: 40%;
+  margin: 0 25px 5px 0;
 }
 
 .article-aboutme, .article-skills {
@@ -123,12 +131,11 @@ html {
   flex-flow: row;
   justify-content: space-between;
 }
+.article-skills {
+  flex-wrap: wrap;
+}
 .article_color {
   color: white;
-}
-.article-itsme {
-  width: 65%;
-  margin-left: 30px;
 }
 .article-itsme__text {
   margin-bottom: 15px;
@@ -171,12 +178,46 @@ html {
   font-size: 20px;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-device-width: 1400px) {
   .content, .header, .footer {
     min-width: 100%;
     max-width: 100%;
   }
+}
+@media screen and (max-width: 780px) {
+  .header-article__item {
+    font-size: 130%;
+    margin-bottom: 20px;
+  }
 
+  .section {
+    padding: 50px;
+    flex-flow: column;
+  }
+  .section__img {
+    width: 100%;
+  }
+  .section-itsme__img {
+    display: none;
+  }
+
+  .article-itsme {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .article-aboutme__column {
+    width: 100%;
+  }
+  .article-aboutme {
+    flex-flow: column;
+  }
+
+  .article-itsme__text, .article-aboutme__item, .footer-address {
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 640px) {
   .header-article__title {
     font-size: 30px;
     margin-bottom: 20px;
@@ -184,29 +225,18 @@ html {
 
   .section {
     padding: 20px;
-    flex-flow: column;
-  }
-  .section__img {
-    width: 100%;
   }
 
-  .article-aboutme {
-    flex-flow: column;
-  }
-  .article-skills {
-    flex-wrap: wrap;
-  }
   .article-itsme {
-    width: 100%;
-    text-align: center;
     margin-top: 20px;
-    margin-left: 0;
-  }
-  .article-aboutme__column {
-    width: 100%;
   }
   .article-skills__column {
     padding: 20px 0;
+  }
+
+  .article-itsme__text, .article-aboutme__item,
+.footer-address, .header-article__item {
+    font-size: 100%;
   }
 }
 
