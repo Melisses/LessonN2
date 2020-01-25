@@ -90,12 +90,13 @@ html {
 }
 
 .article {
-    &-aboutme, &-skills {
+    &-aboutme {
         @include display(flex);
     }
 
     &-skills {
         flex-wrap: wrap;
+        @include display(flex);
     }
 
     &_color {
