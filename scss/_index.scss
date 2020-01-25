@@ -11,7 +11,7 @@ html {
     }
 }
 
-@mixin template_size ($width) {
+@mixin template-size ($width) {
     width: $width;
     min-width: 960px;
     max-width: 100%;
